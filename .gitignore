@@ -1,0 +1,44 @@
+# Compiled Python Files
+*.pyc
+__pycache__/
+
+# Virtual Environments (Adjust if using a different name)
+venv/
+.env
+
+# Jupyter Notebook Checkpoints
+*.ipynb_checkpoints
+
+
+# Results and Intermediate Files
+Manuscript 2 (Model Evaluation)/Code/Results/*
+Manuscript 2 (Model Evaluation)/Code/runs/*
+Manuscript 2 (Model Evaluation)/SVS_Source_Code/*
+
+# Python-Specific Files
+.DS_Store
+*.egg-info
+*.log
+.pytest_cache
+
+# presenation files
+*.pptx
+*.ppt
+*.key
+
+# Data and Figures
+*.csv
+*.xlsx
+*.feather
+*.parquet
+*.hdf5
+*.pkl
+*.met
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+
+# zip files
+*.zip
