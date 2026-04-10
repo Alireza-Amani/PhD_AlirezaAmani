@@ -108,7 +108,9 @@ pip install pandas numpy scipy pingouin matplotlib seaborn plotly jupyter
 
 ## Citation
 
-If you use this data or code, please cite the associated manuscript and dataset (details to be updated upon publication).
+If you use this data or code, please cite the associated manuscript and dataset:
+
+📄 Amani, A., Boucher, M.-A., & Cabral, A. R. (2025). Analyzing deep percolation dynamics: A lysimeter-based study in a cold environment. *Hydrological Processes*, 39, e70119. [https://onlinelibrary.wiley.com/doi/full/10.1002/hyp.70119](https://onlinelibrary.wiley.com/doi/full/10.1002/hyp.70119)
 
 ---
 
