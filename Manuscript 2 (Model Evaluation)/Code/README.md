@@ -19,7 +19,9 @@ This folder contains the code necessary to reproduce the inverse modeling and en
 
 ## Dependencies
 
-- **Python Libraries:** pandas, numpy, scipy, scikit-learn, matplotlib, seaborn, svspyed
+- **Python Libraries:** pandas, numpy, scipy, scikit-learn, matplotlib, seaborn
+- **svspyed:** Python wrapper for the SVS model, developed by Alireza Amani — handles all model input/output operations ([GitHub](https://github.com/Alireza-Amani/svspyed))
+- **CRPSnb:** Python implementation of the neighborhood-based Continuous Ranked Probability Score (CRPS), developed from scratch by Alireza Amani ([GitHub](https://github.com/Alireza-Amani/CRPSnb))
 - **SVS Model:** Ensure you have the SVS model executable in the specified location.
 - **Helper Functions:** The `helpers.py` file (included in this folder) contains custom functions for data processing, model setup, and analysis.
 

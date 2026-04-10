@@ -65,7 +65,11 @@ The raw lysimeter data are publicly available on **Zenodo**:
 
 ## Code
 
-The analysis workflow is implemented in **Python** using Jupyter Notebooks:
+The analysis workflow is implemented in **Python** using Jupyter Notebooks.
+
+A key component of this work is the **`svspyed`** package — a Python wrapper for the SVS (Soil-Vegetation-Snow) land surface model, developed by Alireza Amani. This wrapper handles all model input/output operations and enables seamless integration of the SVS model executable within Python-based ensemble workflows. See [GitHub](https://github.com/Alireza-Amani/svspyed) for the source code.
+
+Ensemble performance evaluation relies on the **Continuous Ranked Probability Score (CRPS)**, which was implemented in Python from scratch by Alireza Amani as part of the **`CRPSnb`** package. This implementation supports neighborhood-based CRPS computation tailored to the needs of this study. See [GitHub](https://github.com/Alireza-Amani/CRPSnb) for the source code.
 
 ### Workflow
 
@@ -85,7 +89,8 @@ The analysis workflow is implemented in **Python** using Jupyter Notebooks:
 *   Python 3.x
 *   `pandas`, `numpy`, `scipy`, `scikit-learn`
 *   `matplotlib`, `seaborn`
-*   `svspyed` — Python package for working with SVS model input/output files ([GitHub](https://github.com/Alireza-Amani/svspyed))
+*   `svspyed` — Python wrapper for SVS model I/O, developed by Alireza Amani ([GitHub](https://github.com/Alireza-Amani/svspyed))
+*   `CRPSnb` — Python implementation of neighborhood-based CRPS, developed by Alireza Amani ([GitHub](https://github.com/Alireza-Amani/CRPSnb))
 *   `jupyter`
 *   **SVS model executable** — must be compiled separately
 
@@ -115,16 +120,24 @@ pip install pandas numpy scipy scikit-learn matplotlib seaborn svspyed jupyter
 ## Related Resources
 
 *   📄 **Manuscript 1** — Lysimeter-based characterization of deep percolation dynamics: [`../Manuscript 1 (Deep Percolation)/`](../Manuscript%201%20(Deep%20Percolation)/)
+*   📄 **Published Paper** — Amani et al. (2025), *Hydrology and Earth System Sciences*, 29, 2445: [https://hess.copernicus.org/articles/29/2445/2025/](https://hess.copernicus.org/articles/29/2445/2025/)
 *   🌐 **Climate Data** — [Environment and Climate Change Canada](https://climate.weather.gc.ca/)
 *   🌐 **ERA5 Reanalysis** — [Copernicus Climate Data Store](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land?tab=overview)
-*   🛠 **svspyed** — [Python package for SVS model I/O](https://github.com/Alireza-Amani/svspyed)
-*   🛠 **CRPSnb** — [Neighborhood-Based CRPS](https://github.com/Alireza-Amani/CRPSnb)
+*   🛠 **svspyed** — [Python wrapper for SVS model I/O, developed by Alireza Amani](https://github.com/Alireza-Amani/svspyed)
+*   🛠 **CRPSnb** — [Python implementation of neighborhood-based CRPS, developed by Alireza Amani](https://github.com/Alireza-Amani/CRPSnb)
 
 ---
 
 ## Citation
 
-If you use this data or code, please cite the associated manuscript and dataset (details to be updated upon publication).
+If you use this data or code, please cite the associated manuscript and dataset:
+
+**Manuscript:**  
+Amani, A., Boucher, M.-A., & Cabral, A. R. (2025). Cold Climates, Complex Hydrology: Can A Land Surface Model Accurately Simulate Deep Percolation? *Hydrology and Earth System Sciences*, 29, 2445.  
+🔗 [https://hess.copernicus.org/articles/29/2445/2025/](https://hess.copernicus.org/articles/29/2445/2025/)
+
+**Dataset:**  
+📦 [Integrated Lysimeter Study (Deep Percolation) Data — Saint-Nicéphore, Québec](https://zenodo.org/records/10582140)
 
 ---
 
